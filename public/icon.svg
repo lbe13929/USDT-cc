@@ -1,0 +1,11 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="37" fill="#1a5c3a"/>
+  <!-- Shekel symbol ₪ drawn as paths -->
+  <!-- Two vertical bars -->
+  <rect x="60" y="38" width="12" height="104" rx="4" fill="white"/>
+  <rect x="108" y="38" width="12" height="104" rx="4" fill="white"/>
+  <!-- Horizontal bar top -->
+  <rect x="52" y="60" width="76" height="11" rx="4" fill="white"/>
+  <!-- Horizontal bar bottom -->
+  <rect x="52" y="109" width="76" height="11" rx="4" fill="white"/>
+</svg>
