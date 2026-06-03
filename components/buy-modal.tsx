@@ -117,16 +117,15 @@ export function BuyModal({ isOpen, onClose, lang }: BuyModalProps) {
             >
               {t.cancel}
             </Button>
-            <Button
+          <Button
               onClick={handleSubmit}
-              disabled={!amount || !paymentMethod || !accountNumber}
-              className="flex-1 text-white font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              style={{
-                backgroundColor: (!amount || !paymentMethod || !accountNumber) ? '#1e293b' : '#0088cc'
-              }}
+              disabled={!amount || !address || !network}
+              className="flex-1 text-white font-medium transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+              style={{ backgroundColor: '#0088cc' }}
             >
               {t.submitButton}
             </Button>
+           </div>
           </div>
         </div>
       </div>
