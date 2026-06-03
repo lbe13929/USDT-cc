@@ -117,7 +117,7 @@ export function BuyModal({ isOpen, onClose, lang }: BuyModalProps) {
             >
               {t.cancel}
             </Button>
-          <Button
+            <Button
               onClick={handleSubmit}
               disabled={!amount || !address || !network}
               className="flex-1 text-white font-medium transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
