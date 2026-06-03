@@ -47,7 +47,7 @@ export function SellModal({ isOpen, onClose, lang }: SellModalProps) {
       `Hi, I want to sell ${amount} USDT.\n\nPayment method: ${methodName}\nAccount number: ${accountNumber}\nI will receive: ${totalILS} ILS`
     );
     
-    window.open(`https://wa.me/972507446823?text=${message}`, '_blank');
+    window.open(`https://t.me/TetherGate74?text=${message}`, '_blank');
     onClose();
   };
 
