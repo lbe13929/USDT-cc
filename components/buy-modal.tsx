@@ -125,7 +125,6 @@ export function BuyModal({ isOpen, onClose, lang }: BuyModalProps) {
             >
               {t.submitButton}
             </Button>
-           </div>
           </div>
         </div>
       </div>
