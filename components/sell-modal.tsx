@@ -28,7 +28,9 @@ export function SellModal({ isOpen, onClose, lang }: SellModalProps) {
   const [paymentMethod, setPaymentMethod] = useState('');
   const [accountNumber, setAccountNumber] = useState('');
 
-  const totalILS = amount ? (parseFloat(amount) * 3.5).toFixed(2) : '0.00';
+  // 修复：使用正确的汇率计算
+  const exchangeRate = 3.5; // 或者从配置中获取
+  const totalILS = amount ? (parseFloat(amount) * exchangeRate).toFixed(2) : '0.00';
 
   const getPaymentMethodName = (method: string) => {
     switch (method) {
@@ -83,6 +85,8 @@ export function SellModal({ isOpen, onClose, lang }: SellModalProps) {
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
               className="bg-input border-border text-foreground placeholder:text-muted-foreground"
+              min="0"
+              step="0.01"
             />
           </div>
 
@@ -112,12 +116,12 @@ export function SellModal({ isOpen, onClose, lang }: SellModalProps) {
             />
           </div>
 
-         <div className="p-4 bg-secondary/50 rounded-xl border border-border">
+          <div className="p-4 bg-secondary/50 rounded-xl border border-border">
             <div className="flex justify-between items-center">
               <span className="text-muted-foreground">{t.totalLabel}</span>
               <span className="text-2xl font-bold text-primary">₪{totalILS}</span>
             </div>
-            <p className="text-xs text-muted-foreground mt-1">1 USDT = 4.4 ILS</p>
+            <p className="text-xs text-muted-foreground mt-1">1 USDT = {exchangeRate} ILS</p>
           </div>
 
           <div className="flex gap-3 pt-2">
@@ -130,7 +134,7 @@ export function SellModal({ isOpen, onClose, lang }: SellModalProps) {
             </Button>
             <Button
               onClick={handleSubmit}
-              disabled={!amount || !address || !network}
+              disabled={!amount || !paymentMethod || !accountNumber}
               className="flex-1 text-white font-medium transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
               style={{ backgroundColor: '#0088cc' }}
             >
