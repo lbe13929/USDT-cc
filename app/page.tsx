@@ -369,7 +369,7 @@ export default function Home() {
         </div>
       </footer>
 
-     {/* Telegram Floating Button */}
+{/* Telegram Floating Button */}
 <a
   href="https://t.me/TetherGate74"
   target="_blank"
@@ -381,3 +381,11 @@ export default function Home() {
     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-1-.65-.35-1 .22-1.62.15-.15 2.7-2.48 2.75-2.7.01-.03.01-.14-.06-.2-.07-.06-.17-.04-.25-.02-.11.02-1.84 1.16-5.16 3.41-.49.33-.93.5-1.33.49-.44-.01-1.29-.25-1.92-.45-.77-.25-1.39-.39-1.34-.83.03-.23.35-.46.97-.71 3.82-1.66 6.37-2.75 7.66-3.27 3.64-1.48 4.4-1.74 4.89-1.75.11 0 .35.03.5.15.13.1.17.24.18.34-.01.06-.01.19-.02.26z"/>
   </svg>
 </a>
+
+{/* Modals */}
+<BuyModal isOpen={buyModalOpen} onClose={() => setBuyModalOpen(false)} lang={lang} />
+<SellModal isOpen={sellModalOpen} onClose={() => setSellModalOpen(false)} lang={lang} />
+
+</div >
+);
+}
