@@ -112,12 +112,12 @@ export function SellModal({ isOpen, onClose, lang }: SellModalProps) {
             />
           </div>
 
-          <div className="p-4 bg-secondary/50 rounded-xl border border-border">
+         <div className="p-4 bg-secondary/50 rounded-xl border border-border">
             <div className="flex justify-between items-center">
               <span className="text-muted-foreground">{t.totalLabel}</span>
-              <span className="text-2xl font-bold text-accent">₪{totalILS}</span>
+              <span className="text-2xl font-bold text-primary">₪{totalILS}</span>
             </div>
-            <p className="text-xs text-muted-foreground mt-1">1 USDT = 3.5 ILS</p>
+            <p className="text-xs text-muted-foreground mt-1">1 USDT = 4.4 ILS</p>
           </div>
 
           <div className="flex gap-3 pt-2">
