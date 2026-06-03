@@ -129,11 +129,15 @@ export function SellModal({ isOpen, onClose, lang }: SellModalProps) {
               {t.cancel}
             </Button>
             <Button
-              onClick={handleSubmit}
-              disabled={!amount || !paymentMethod || !accountNumber}
-              className="flex-1 bg-accent text-accent-foreground hover:bg-accent/90"
-            >
-              {t.submitButton}
+  onClick={handleSubmit}
+  disabled={!amount || !address || !network}
+  className="flex-1 text-white font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+  style={{
+    backgroundColor: !amount || !address || !network ? '#1e293b' : '#0088cc'
+  }}
+>
+  {t.submitButton}
+</Button>
             </Button>
           </div>
         </div>
