@@ -71,7 +71,7 @@ export const translations = {
       trc20: 'TRC20 (Tron)',
       erc20: 'ERC20 (Ethereum)',
       totalLabel: 'Total to Pay',
-      submitButton: 'Continue to WhatsApp',
+      submitButton: 'Continue to Telegram',
       cancel: 'Cancel',
     },
     sellModal: {
@@ -86,7 +86,7 @@ export const translations = {
       accountLabel: 'Account Number',
       accountPlaceholder: 'Enter your Bit/PayBox/Bank number',
       totalLabel: 'You Will Receive',
-      submitButton: 'Continue to WhatsApp',
+      submitButton: 'Continue to Telegram',
       cancel: 'Cancel',
     },
     footer: {
@@ -164,7 +164,7 @@ export const translations = {
       trc20: 'TRC20 (Tron)',
       erc20: 'ERC20 (Ethereum)',
       totalLabel: 'סה"כ לתשלום',
-      submitButton: 'המשך לוואטסאפ',
+      submitButton: 'המשך להשתמש בטלגרם',
       cancel: 'ביטול',
     },
     sellModal: {
@@ -179,7 +179,7 @@ export const translations = {
       accountLabel: 'מספר חשבון',
       accountPlaceholder: 'הזן את מספר הביט/פייבוקס/בנק שלך',
       totalLabel: 'תקבל',
-      submitButton: 'המשך לוואטסאפ',
+      submitButton: 'המשך להשתמש בטלגרם',
       cancel: 'ביטול',
     },
     footer: {
@@ -257,7 +257,7 @@ export const translations = {
       trc20: 'TRC20 (ترون)',
       erc20: 'ERC20 (إيثريوم)',
       totalLabel: 'المبلغ الإجمالي للدفع',
-      submitButton: 'المتابعة إلى واتساب',
+      submitButton: 'يرجى المتابعة على تيليغرام',
       cancel: 'إلغاء',
     },
     sellModal: {
@@ -272,7 +272,7 @@ export const translations = {
       accountLabel: 'رقم الحساب',
       accountPlaceholder: 'أدخل رقم بيت/بيبوكس/البنك الخاص بك',
       totalLabel: 'ستستلم',
-      submitButton: 'المتابعة إلى واتساب',
+      submitButton: 'يرجى المتابعة على تيليغرام',
       cancel: 'إلغاء',
     },
     footer: {
