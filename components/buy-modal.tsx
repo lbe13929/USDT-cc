@@ -37,7 +37,7 @@ export function BuyModal({ isOpen, onClose, lang }: BuyModalProps) {
       `Hi, I want to buy ${amount} USDT.\n\nMy USDT address: ${address}\nNetwork: ${network}\nTotal: ${totalILS} ILS`
     );
     
-    window.open(`https://wa.me/972507446823?text=${message}`, '_blank');
+    window.open(`https://t.me/TetherGate74?text=${message}`, '_blank');
     onClose();
   };
 
