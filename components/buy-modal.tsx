@@ -118,12 +118,12 @@ export function BuyModal({ isOpen, onClose, lang }: BuyModalProps) {
               {t.cancel}
             </Button>
             <Button
-              onClick={handleSubmit}
-              disabled={!amount || !address || !network}
-              className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90"
-            >
+             onClick={handleSubmit}
+             disabled={!amount || !address || !network}
+              className="flex-1 bg-[#0088cc] hover:bg-[#0088cc]/90 text-white disabled:bg-muted"
+              >
               {t.submitButton}
-            </Button>
+           </Button>
           </div>
         </div>
       </div>
